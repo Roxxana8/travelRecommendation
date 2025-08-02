@@ -73,7 +73,7 @@ function searchDestinations() {
         </div>
     resultsDiv.innerHTML += card;
 });
-
+}
 // Clear search
 function clearResults() {
     document.getElementById('searchInput').value = "";
