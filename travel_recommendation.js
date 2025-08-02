@@ -75,11 +75,10 @@ function searchDestinations() {
         resultsDiv.innerHTML += card;
     });
 
-} // ← ✅ this one was missing
+} 
 
 // Clear search
 function clearResults() {
     document.getElementById('searchInput').value = "";
     document.getElementById('results').innerHTML = "";
 }
-
