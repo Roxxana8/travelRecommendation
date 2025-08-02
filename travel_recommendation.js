@@ -64,17 +64,16 @@ function searchDestinations() {
     }
 
     // Display results
-    results.forEach(place => {
-        const card = `
-            <div style="background-color: #ffe4e1; padding: 1rem; margin: 1rem auto; max-width: 600px; border-radius: 10px; box-shadow: 0 4px 8px rgba(255, 192, 203, 0.3);">
-                <h2 style="color: #8b005d;">${place.name}</h2>
-                <img src="travelRecommendation/${place.imageUrl}" alt="${place.name}" style="width: 100%; border-radius: 8px; margin: 0.5rem 0;">
-                <p style="color: #6d214f;">${place.description}</p>
-            </div>
-        `;
-        resultsDiv.innerHTML += card;
-    });
-}
+   results.forEach(place => {
+    const card = `
+        <div style="background-color: #ffe4e1; padding: 1rem; margin: 1rem auto; max-width: 600px; border-radius: 10px; box-shadow: 0 4px 8px rgba(255, 192, 203, 0.3);">
+            <h2 style="color: #8b005d;">${place.name}</h2>
+            <img src="${place.imageUrl}" alt="${place.name}" style="width: 100%; border-radius: 8px; margin: 0.5rem 0;">
+            <p style="color: #6d214f;">${place.description}</p>
+        </div>
+    `;
+    resultsDiv.innerHTML += card;
+});
 
 // Clear search
 function clearResults() {
