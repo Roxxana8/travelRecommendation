@@ -70,7 +70,7 @@ function searchDestinations() {
             <h2 style="color: #8b005d;">${place.name}</h2>
             <img src="${place.imageUrl}" alt="${place.name}" style="width: 100%; border-radius: 8px; margin: 0.5rem 0;">
             <p style="color: #6d214f;">${place.description}</p>
-        </div>
+        </div> `;
     resultsDiv.innerHTML += card;
 });
 }
