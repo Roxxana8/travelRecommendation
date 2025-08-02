@@ -71,7 +71,6 @@ function searchDestinations() {
             <img src="${place.imageUrl}" alt="${place.name}" style="width: 100%; border-radius: 8px; margin: 0.5rem 0;">
             <p style="color: #6d214f;">${place.description}</p>
         </div>
-    `;
     resultsDiv.innerHTML += card;
 });
 
